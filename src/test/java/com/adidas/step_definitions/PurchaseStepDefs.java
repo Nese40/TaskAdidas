@@ -11,11 +11,8 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 public class PurchaseStepDefs {
-    WebDriverWait wait =new WebDriverWait(Driver.get(),30);
+
 
     LaptopsPage laptopsPage=new LaptopsPage();
     CartPage cartPage=new CartPage();
