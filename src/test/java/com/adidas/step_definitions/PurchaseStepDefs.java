@@ -10,6 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -28,42 +29,49 @@ public class PurchaseStepDefs {
 
     }
 
-    @Then("the customer  clicks on {string}")
-    public void the_customer_clicks_on(String product) {
+
+    @When("the customer  navigates to {string} {string}")
+    public void the_customer_navigates_to(String category,String product) {
 
         BrowserUtils.waitFor(1);
-        laptopsPage.searchProduct(product);
+        laptopsPage.navigateTo(category,product);
 
     }
 
-    @Then("the customer  Accept pop up confirmation")
-    public void the_customer_Accept_pop_up_confirmation() {
+    @Then("the customer  clicks on {string} and accept pop up")
+    public void the_customer_clicks_on_and_accept_pop_up(String product) {
+
+        Driver.get().findElement(By.linkText(product)).click();
+
         BrowserUtils.waitFor(1);
         Alert alert = Driver.get().switchTo().alert();
         alert.accept();
     }
 
-    @When("the customer clicks Home button to return to the HomePage")
-    public void the_customer_clicks_Home_button_to_return_to_the_HomePage() {
+    @Then("the customer  clicks on {string}")
+    public void the_customer_clicks_on(String module) {
 
-        wait.until(ExpectedConditions.visibilityOf(cartPage.homePageModule));
-        cartPage.homePageModule.click();
+        BrowserUtils.waitFor(1);
+        laptopsPage.moduleNames(module);
 
     }
+
     @Then("the customer  deletes {string}")
     public void the_customer_deletes(String deleteProduct) {
         BrowserUtils.waitFor(1);
         cartPage.delete(deleteProduct);
 
     }
-    @Then("the customer  clicks on Place order button")
-    public void customer_click_on_Place_order() {
+
+    @Then("the customer  clicks on {string} button")
+    public void customer_click_on_button(String button) {
         BrowserUtils.waitFor(1);
-        cartPage.placeOrder.click();
+
+        cartPage.clickButton(button);
 
     }
-    @Then("the customer  fills in all web form fields and click Purchase")
-    public void the_customer_fills_in_all_web_form_fields_and_click_Purchase() {
+    @Then("the customer  fills in all web form fields")
+    public void the_customer_fills_in_all_web_form_fields() {
         BrowserUtils.waitFor(2);
         cartPage.getInformation();
 
@@ -81,11 +89,6 @@ public class PurchaseStepDefs {
         int actualResult =  cartPage.getPrice();
         Assert.assertEquals(cartPage.getExpectedPrice(),actualResult);
 
-    }
-    @Then("the customer  clicks on Ok")
-    public void the_customer_clicks_on_Ok() {
-        BrowserUtils.waitFor(1);
-        cartPage.okButton.click();
     }
 
 

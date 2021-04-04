@@ -13,10 +13,6 @@ public class CartPage extends BasePage{
     @FindBy(xpath = "//table/tbody/tr")
     public List<WebElement> table;
 
-    @FindBy(css = "button.btn.btn-success")
-    public WebElement placeOrder;
-
-
     @FindBy(id = "name")
     public WebElement name;
 
@@ -35,11 +31,6 @@ public class CartPage extends BasePage{
     @FindBy(id = "year")
     public WebElement year;
 
-    @FindBy(xpath = "//button[@onclick='purchaseOrder()']")
-    public WebElement purchase;
-
-    @FindBy(css = "button.confirm.btn.btn-lg.btn-primary")
-    public WebElement okButton;
 
     @FindBy(xpath = "//body/div[10]/p[1]")
     public WebElement confirmationPupUpBox;
@@ -69,11 +60,12 @@ public class CartPage extends BasePage{
         month.sendKeys("6");
         year.sendKeys("2024");
         BrowserUtils.waitFor(1);
-        purchase.click();
+
 
     }
 
     public String getTextOfReport(){
+
         return confirmationPupUpBox.getText().replaceAll(" ","");
     }
     public int getID() {
@@ -99,6 +91,11 @@ public class CartPage extends BasePage{
     }
 
 
+    public void clickButton(String buttonName){
+
+        Driver.get().findElement(By.xpath("//button[contains(text(),'"+buttonName+"')]")).click();
+
+    }
 
 
 

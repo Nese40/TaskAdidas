@@ -13,15 +13,17 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    @FindBy(xpath = "//a[@class='nav-link']")
-    public WebElement homePageModule;
 
 
-    public void searchProduct(String moduleName){
-        Driver.get().findElement(By.linkText(moduleName)).click();
+    public void moduleNames(String moduleName){
+
+        Driver.get().findElement(By.xpath("//a[contains(text(),'"+moduleName+"')]")).click();
+
     }
+    public void navigateTo(String categoryName,String productName){
+        Driver.get().findElement(By.linkText(categoryName)).click();
+        Driver.get().findElement(By.linkText(productName)).click();
 
-
-
+    }
 
 }
