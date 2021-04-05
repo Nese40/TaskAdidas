@@ -67,10 +67,11 @@ public class PurchaseStepDefs {
         cartPage.clickButton(button);
 
     }
-    @Then("the customer  fills in all web form fields")
-    public void the_customer_fills_in_all_web_form_fields() {
-        BrowserUtils.waitFor(2);
-        cartPage.getInformation();
+    @Then("the customer  fills {string} field {string}")
+    public void the_customer_fills_field(String info,String value) {
+        BrowserUtils.waitFor(1);
+
+        cartPage.getInformation(info,value);
 
     }
     @Then("the customer  captures and logs purchase Id and Amount")

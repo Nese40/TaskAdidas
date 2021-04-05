@@ -13,24 +13,6 @@ public class CartPage extends BasePage{
     @FindBy(xpath = "//table/tbody/tr")
     public List<WebElement> table;
 
-    @FindBy(id = "name")
-    public WebElement name;
-
-    @FindBy(id = "country")
-    public WebElement country;
-
-    @FindBy(id = "city")
-    public WebElement city;
-
-    @FindBy(id = "card")
-    public WebElement creditCard;
-
-    @FindBy(id = "month")
-    public WebElement month;
-
-    @FindBy(id = "year")
-    public WebElement year;
-
 
     @FindBy(xpath = "//body/div[10]/p[1]")
     public WebElement confirmationPupUpBox;
@@ -50,19 +32,12 @@ public class CartPage extends BasePage{
             }
         }
     }
+    public void getInformation(String info,String value){
 
-    public void getInformation(){
-
-        name.sendKeys("Nese");
-        country.sendKeys("Turkey");
-        city.sendKeys("Istanbul");
-        creditCard.sendKeys("21548796563");
-        month.sendKeys("6");
-        year.sendKeys("2024");
-        BrowserUtils.waitFor(1);
-
+        Driver.get().findElement(By.id(info)).sendKeys(value);
 
     }
+
 
     public String getTextOfReport(){
 
