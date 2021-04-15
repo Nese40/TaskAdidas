@@ -1,0 +1,416 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-15T12:08:30.535Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2746984200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.adidas.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Customer can purchase",
+        "description": "",
+        "id": "purchase-product;customer-can-purchase",
+        "after": [
+          {
+            "result": {
+              "duration": 795111500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.adidas.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1918534600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the customer is on the homePage",
+            "match": {
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_is_on_the_homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1610573100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the customer  navigates to \"Laptops\" \"Sony vaio i5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Laptops\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Sony vaio i5\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_navigates_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1440575300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the customer  clicks on \"Add to cart\" and accept pop up",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add to cart\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_clicks_on_and_accept_pop_up(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1243163800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the customer  clicks on \"Home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1720064800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the customer  navigates to \"Laptops\" \"Dell i7 8gb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Laptops\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Dell i7 8gb\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_navigates_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1285331100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the customer  clicks on \"Add to cart\" and accept pop up",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add to cart\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_clicks_on_and_accept_pop_up(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1464532800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the customer  clicks on \"Cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cart\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3169416400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the customer  deletes \"Dell i7 8gb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dell i7 8gb\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_deletes(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1069707400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the customer  clicks on \"Place Order\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Place Order\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.customer_click_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1134353700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the customer  fills \"name\" field \"Nese\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Nese\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_fills_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1155065700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the customer  fills \"country\" field \"Turkey\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"country\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Turkey\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_fills_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1139801400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the customer  fills \"city\" field \"Istanbul\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"city\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Istanbul\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_fills_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1109903100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the customer  fills \"card\" field \"1235447\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"card\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"1235447\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_fills_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1071994600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the customer  fills \"month\" field \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"month\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"3\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_fills_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1098191700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the customer  fills \"year\" field \"2023\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"year\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"2023\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_fills_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1120453400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the customer  clicks on \"Purchase\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Purchase\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.customer_click_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124985900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the customer  captures and logs purchase Id and Amount",
+            "match": {
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.the_customer_captures_and_logs_purchase_Id_and_Amount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81556500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "purchase amount equals expected",
+            "match": {
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.purchase_amount_equals_expected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1479591500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the customer  clicks on \"OK\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.adidas.step_definitions.PurchaseStepDefs.customer_click_on_button(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@purchase"
+          }
+        ]
+      }
+    ],
+    "name": "purchase product",
+    "description": "",
+    "id": "purchase-product",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/purchase.feature",
+    "tags": [
+      {
+        "name": "@purchase",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
